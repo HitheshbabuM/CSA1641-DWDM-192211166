@@ -1,0 +1,5 @@
+data <- c(200, 300, 400, 600, 1000)
+normalized_minmax <- (data - 50000) / (100000 - 50000)
+normalized_zscore <- (data - mean(data)) / sd(data)
+cat("Min-Max Normalization:\n", normalized_minmax, "\n")
+cat("Z-Score Normalization:\n", normalized_zscore, "\n")
