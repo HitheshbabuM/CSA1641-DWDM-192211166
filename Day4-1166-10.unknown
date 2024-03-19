@@ -1,0 +1,15 @@
+@relation Purchase_Pattern
+
+@attribute T_ID numeric
+@attribute ITEMS string
+
+@data
+1, 'SONY, BPL, LG'
+2, 'BPL, SAMSUNG'
+3, 'BPL, ONIDA'
+4, 'SONY, BPL, SAMSUNG'
+5, 'SONY, ONIDA'
+6, 'BPL, ONIDA'
+7, 'SONY, ONIDA'
+8, 'SONY, BPL, ONIDA, LG'
+9, 'SONY, BPL, ONIDA'

@@ -1,0 +1,10 @@
+marks <- c(55, 60, 71, 63, 55, 65, 50, 55, 58, 59, 61, 63, 65, 67, 71, 72, 75)
+marks_eq_freq <- cut(marks, breaks = 3, labels = FALSE)
+marks_eq_width <- cut(marks, breaks = 3)
+k <- 3
+cluster_centers <- kmeans(matrix(marks), centers = k)$centers
+marks_clusters <- cut(marks, breaks = c(-Inf, sort(cluster_centers), Inf))
+par(mfrow=c(1,3))
+hist(marks, breaks = 3, main = "Equal-frequency Partitioning", xlab = "Marks", col = "skyblue")
+hist(marks, breaks = "FD", main = "Equal-width Partitioning", xlab = "Marks", col = "lightgreen")
+hist(marks, breaks = 3, main = "Clustering", xlab = "Marks", col = "salmon")

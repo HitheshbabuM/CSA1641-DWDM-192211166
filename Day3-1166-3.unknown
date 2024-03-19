@@ -1,0 +1,24 @@
+@relation computer_purchase
+
+@attribute D {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14}
+@attribute Age {<=30, 31_40, >40}
+@attribute Income {high, medium, low}
+@attribute Student {yes, no}
+@attribute Credit_rating {fair, excellent}
+@attribute Buys_computer {yes, no}
+
+@data
+1,<=30,high,no,fair,no
+2,<=30,high,no,excellent,no
+3,31_40,high,no,fair,yes
+4,>40,medium,no,fair,yes
+5,>40,medium,no,fair,yes
+6,>40,low,yes,excellent,no
+7,31_40,low,yes,excellent,yes
+8,<=30,medium,no,fair,yes
+9,<=30,low,yes,fair,yes
+10,>40,medium,yes,fair,yes
+11,<=30,medium,yes,fair,yes
+12,31_40,medium,no,excellent,yes
+13,31_40,high,yes,fair,yes
+14,>40,medium,no,excellent,no

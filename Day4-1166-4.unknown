@@ -1,0 +1,15 @@
+data <- data.frame(
+  Person = c("Gopu", "Babu", "Baby", "Gopal", "Krishna", "Jai", "Dev", "Malini", "Hema", "Anu"),
+  Vegetarian = c("yes", "yes", "yes", "no", "yes", "no", "no", "yes", "yes", "yes")
+)
+vegetarian_count <- sum(data$Vegetarian == "yes")
+non_vegetarian_count <- sum(data$Vegetarian == "no")
+cat("Number of vegetarian individuals:", vegetarian_count, "\n")
+cat("Number of non-vegetarian individuals:", non_vegetarian_count, "\n")
+if (vegetarian_count > non_vegetarian_count) {
+  cat("Vegetarians have a greater total count.\n")
+} else if (vegetarian_count < non_vegetarian_count) {
+  cat("Non-vegetarians have a greater total count.\n")
+} else {
+  cat("The counts of vegetarians and non-vegetarians are equal.\n")
+}
