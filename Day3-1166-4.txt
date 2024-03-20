@@ -1,0 +1,6 @@
+data<-read.csv("C:/Users/Hithesh/Desktop/dwdm/download papers/diabetes.csv")
+data
+relation<-lm(data$Age~data$Outcome)
+relation
+relation<-lm(data$Age~data$Outcome+data$BMI)
+relation
